@@ -108,7 +108,7 @@ function onEachFeature(feature, layer) {
 }
 
 // 7) Load CLEAN GeoJSON (already Europe only)
-fetch("data/sdg4_girls_literacy_2018.geojson")
+fetch("sdg4_girls_literacy_2018.geojson")
   .then(r => r.json())
   .then(data => {
     geojson = L.geoJson(data, {
@@ -199,3 +199,4 @@ if (closeBtn && modal) {
     modal.classList.add("hidden");
   });
 }
+
